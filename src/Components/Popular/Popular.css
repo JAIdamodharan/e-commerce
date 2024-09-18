@@ -1,0 +1,129 @@
+/* Main container for new collections */
+.popular {
+    background: linear-gradient(135deg, rgba(186, 255, 67, 0.4) 0%, rgba(255, 255, 255, 0.6) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 100%;
+    padding: 40px; /*Increased padding for more spacious layout */
+    box-sizing: border-box;
+    border-radius: 20px; /* More rounded corners for a softer look */
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    overflow: hidden; /* To ensure contents are not overflowing */
+}
+
+/* Title styling */
+.popular h1 {
+    color: #333;
+    font-size: 52px; /* Slightly larger font size for better impact */
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    position: relative;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Add more shadow for depth */
+}
+
+/* Horizontal rule styling */
+.popular hr {
+    width: 300px; /* Wider HR for a stronger visual line */
+    height: 6px; /* Slightly thicker HR */
+    border-radius: 30px; /* More rounded corners */
+    background: linear-gradient(90deg, #252525 0%, #ff9900 100%); /* Gradient effect */
+    margin-bottom: 35px;
+    border: none; /* Remove default border */
+}
+
+/* Slider container */
+.popular-slider-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 15px; /* Soft edge */
+}
+
+/* Collections container (slides) */
+.popular-collections {
+    display: inline-flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 10px; /* Add space between slides */
+}
+
+/* Individual item styling */
+.item {
+    width: 220px; /* Fixed width for consistent item size */
+    text-align: center; /* Center-align text within the item */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+    position: relative; /* Position relative for positioning child elements */
+    border-radius: 15px; /* Rounded corners for the item */
+    background-color: #fff; /* Clean white background */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 15px; /* Padding inside the item */
+    display: flex; /* Flexbox for aligning children */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align children horizontally */
+    justify-content: center; /* Center content vertically */
+}
+
+/* Hover effect on items */
+.item:hover {
+    transform: scale(1.05); /* Slightly enlarge item on hover */
+}
+
+/* Image styling */
+.item img {
+    width: 100%; /* Image covers the full width of the item */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Set a maximum height to maintain item proportions */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    border-radius: 10px; /* Rounded corners for images */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+/* Text styling inside the item */
+.item p {
+    margin: 0; /* Remove default margin */
+}
+
+/* Previous and Next buttons */
+.prev-slide, .next-slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 14px; /* Increased padding for larger buttons */
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for button */
+}
+
+.prev-slide {
+    left: 20px; /* Increased distance from left edge */
+}
+
+.next-slide {
+    right: 20px; /* Increased distance from right edge */
+}
+
+/* Button hover effect */
+.prev-slide:hover, .next-slide:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .item {
+        width: 160px; /* Adjust width for smaller screens */
+        margin-right: 10px; /* Adjust spacing */
+        padding: 15px;
+    }
+
+    .prev-slide, .next-slide {
+        padding: 10px; /* Adjust button padding for smaller screens */
+    }
+}

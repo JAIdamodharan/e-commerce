@@ -1,0 +1,76 @@
+.hero {
+    height: 100vh;
+    background: linear-gradient(180deg, #d1c1ff, #e1ffea22 60%);
+    display: flex;
+    overflow: hidden; /* Ensure the image doesn't overflow the container */
+    position: relative; /* Required for the scrolling effect */
+}
+
+.hero-left {
+    flex: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 180px;
+    line-height: 1.1;
+}
+
+.hero-left h2 {
+    color: #090909;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.hero-left p {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.hero-hand-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-hand-icon img {
+    width: 10px;
+    height: 5px;
+}
+
+.hero-latest-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 310px;
+    height: 70px;
+    border-radius: 75px;
+    margin-top: 30px;
+    background: #ff4141;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect on the button */
+.hero-latest-btn:hover {
+    background-color: #d13333; /* Darker shade of red on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+.hero-right {
+    flex: 18;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky; /* Make image sticky so it moves with scrolling */
+    top: 50px; /* Adjust based on your design */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for scroll effect */
+}
+
+.hero-right img {
+    width: 90%;
+}  

@@ -1,0 +1,89 @@
+/* Main container for login/signup */
+.loginsignup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #fce3fe; /* Light gray background */
+}
+
+/* Container for the login/signup form */
+.loginsignup-container {
+    background: #ffffff; /* White background for the form */
+    padding: 50px; /* Increased padding for a more spacious layout */
+    border-radius: 10px; /* More rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    max-width: 500px; /* Increased maximum width */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Title styling */
+.loginsignup h1 {
+    font-size: 28px; /* Larger font size for the title */
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 25px; /* Increased margin for more spacing */
+    text-align: center;
+}
+
+/* Styling for input fields */
+.loginsignup-fields input {
+    width: 100%;
+    padding: 14px; /* Increased padding for input fields */
+    margin-bottom: 20px; /* Increased margin for more spacing */
+    border: 1px solid #ddd;
+    border-radius: 6px; /* More rounded corners for input fields */
+    box-sizing: border-box;
+}
+
+/* Button styling */
+.loginsignup button {
+    width: 100%;
+    padding: 14px; /* Increased padding for the button */
+    background-color: #d00202; /* Blue background for button */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 6px; /* More rounded corners for the button */
+    font-size: 18px; /* Larger font size for better readability */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.loginsignup button:hover {
+    background-color: #f05c00; /* Darker blue on hover */
+}
+
+/* Login link styling */
+.loginsignup-login {
+    text-align: center;
+    margin-top: 25px; /* Increased margin for more spacing */
+}
+
+.loginsignup-login span {
+    color: #ff000d; /* Blue color for the login link */
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Agree to terms checkbox and text styling */
+.loginsignup-agree {
+    display: flex;
+    align-items: center;
+    margin-top: 25px; /* Increased margin for more spacing */
+}
+
+.loginsignup-agree input {
+    margin-right: 12px; /* Increased space between checkbox and text */
+}
+
+.loginsignup-agree p {
+    font-size: 16px; /* Slightly larger font size for better readability */
+    color: #666;
+}
+
+.loginsignup-agree p span {
+    color: #007bff; /* Blue color for the terms link */
+    cursor: pointer;
+    text-decoration: underline;
+}
